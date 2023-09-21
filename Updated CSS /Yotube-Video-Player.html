@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive YouTube Player</title>
+    <style>
+        
+
+        .video-container {
+            position: relative;
+            width: 100%; /* Adjust the width as needed */
+            max-width: 100%; /* Set a maximum width if desired */
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <iframe
+            src="https://www.youtube.com/embed/VqJFmoTO_Hw?si=NBLgM7Yts9ZiMDZt&mute=1&loop=1&autoplay=1"
+            frameborder="0"
+            allowfullscreen
+        ></iframe>
+    </div>
+</body>
+</html>
